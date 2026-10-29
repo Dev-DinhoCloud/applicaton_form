@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Apply for an open position at The Dinho Cloud Kitchen.">
+  <title>Job Application | Dinho Cloud Kitchen</title>
+</head>
+<body>
+
+  <header>
+    <p><a href="index.html">Dinho Cloud Kitchen</a></p>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Recipes</a></li>
+        <li><a href="index.html">Contact</a></li>
+        <li><a href="index.html" aria-current="page">Careers</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <article>
+      <h1>Job application</h1>
+      <p>Tell us about yourself and the role you are applying for. Fields marked with an asterisk (*) are required.</p>
+
+      <form action="#" method="post" enctype="multipart/form-data">
+
+        <fieldset>
+          <legend>Your details</legend>
+
+          <p>
+            <label for="name">Full name *</label><br>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              autocomplete="name"
+              required
+              minlength="5"
+              maxlength="80">
+          </p>
+
+          <p>
+            <label for="email">Email address *</label><br>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              autocomplete="email"
+              required>
+          </p>
+
+          <p>
+            <label for="phone">Phone number *</label><br>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              autocomplete="tel"
+              required
+              pattern="\+?[0-9][0-9\s\-]{6,14}[0-9]"
+              title="Enter a phone number of 8 to 16 digits. You may start with + and use spaces or hyphens, e.g. +234 801 234 5678"
+              placeholder="+234 801 234 5678">
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>The role</legend>
+
+          <p>
+            <label for="position">Position *</label><br>
+            <select id="position" name="position" required>
+              <option value="">Select a position</option>
+              <option value="recipe-developer">Recipe tester</option>
+              <option value="food-photographer">Food photographer</option>
+              <option value="content-writer">Content writer</option>
+              <option value="kitchen-assistant">Kitchen assistant</option>
+            </select>
+          </p>
+
+          <p>
+            <label for="start-date">Earliest start date *</label><br>
+            <input
+              type="date"
+              id="start-date"
+              name="start-date"
+              required
+              min="2026-10-30"
+              max="2027-12-31">
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Your application</legend>
+
+          <p>
+            <label for="cover-letter">Cover letter *</label><br>
+            <textarea
+              id="cover-letter"
+              name="cover-letter"
+              rows="8"
+              cols="50"
+              required
+              minlength="50"
+              maxlength="2000"
+              aria-describedby="cover-hint"></textarea><br>
+            <small id="cover-hint">Between 50 and 2000 characters.</small>
+          </p>
+
+          <p>
+            <label for="resume">Resume (PDF or Word, max one file) *</label><br>
+            <input
+              type="file"
+              id="resume"
+              name="resume"
+              accept=".pdf,.doc,.docx"
+              required>
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>How did you hear about us? *</legend>
+
+          <p>
+            <input type="radio" id="source-search" name="source" value="search-engine" required>
+            <label for="source-search">Search engine</label>
+          </p>
+          <p>
+            <input type="radio" id="source-social" name="source" value="social-media">
+            <label for="source-social">Social media</label>
+          </p>
+          <p>
+            <input type="radio" id="source-friend" name="source" value="friend">
+            <label for="source-friend">Friend or colleague</label>
+          </p>
+          <p>
+            <input type="radio" id="source-other" name="source" value="other">
+            <label for="source-other">Other</label>
+          </p>
+        </fieldset>
+
+        <p>
+          <input type="checkbox" id="consent" name="consent" value="yes" required>
+          <label for="consent">I confirm the information above is accurate. *</label>
+        </p>
+
+        <p>
+          <button type="submit">Submit application</button>
+          <button type="reset">Clear form</button>
+        </p>
+
+      </form>
+    </article>
+  </main>
+
+  <footer>
+    <p><small>&copy; 2026 Dinho Cloud Kitchen. All rights reserved.</small></p>
+  </footer>
+
+</body>
+</html>
